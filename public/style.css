@@ -1,0 +1,37 @@
+.word {
+  display: flex;
+}
+
+.char {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+body {
+  text-align: center;
+}
+
+#words {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.word {
+  justify-content: center;
+  height: 10%;
+  margin: 0%; 
+}
+
+.char {
+  /* center chars */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 64px;
+  margin: 1%;
+  /*background-color: blue;*/
+}
