@@ -1,6 +1,6 @@
 const { request, response } = require("express");
 const express = require("express");
-
+const port = process.env.PORT || 3000
 const server = express();
 const theAnswer = "pizza";
 
@@ -23,6 +23,6 @@ server.get("/guess/:word", (request, response) => {
 
 server.use(express.static("public"))
 
-server.listen(10000, () => {
+server.listen(port, () => {
   console.log("server is running on port 10000");
 });
